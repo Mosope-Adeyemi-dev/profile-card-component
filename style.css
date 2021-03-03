@@ -2,7 +2,6 @@ body {
     background-color: hsl(185, 75%, 39%);
     font-family: "Kumbh", Sans;
     overflow: hidden;
-    scroll-behavior: inherit;
 }
 
 .attribution {
