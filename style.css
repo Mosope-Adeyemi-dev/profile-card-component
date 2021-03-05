@@ -2,35 +2,33 @@ body {
     background-color: hsl(185, 75%, 39%);
     font-family: "Kumbh", Sans;
     overflow: hidden;
-    scroll-behavior: inherit;
 }
-
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 .attribution {
-    color: white;
     padding-top: 30px;
     font-size: 11px;
     text-align: center;
 }
-
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
-
-.bg-top {
+.bg{
     position: absolute;
-    margin: -420px;
-    width: 65%;
-    z-index: -1;
 }
-
+.bg-top {
+   top: -320px;
+   left: -100px;
+   z-index: -1;
+}
 .bg-bottom {
-    position: relative;
-    float: right;
-    width: 69%;
-    margin: -450px;
+    right: -100px;
+    bottom: -520px;
     z-index: -1;
 }
-
 .user {
     max-width: 400px;
     margin: auto;
@@ -38,72 +36,70 @@ body {
     height: fit-content;
     text-align: center;
 }
-
 .user-whole {
-    box-shadow: red;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    margin-top: -20px;
+    margin-top: -10px;
     height: fit-content;
     background-color: white;
 }
-
 .user-card-pattern {
     width: 400px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
 }
-
 .user-dp {
     width: 120px;
     padding: 4px;
     border-radius: 96px;
     background-color: white;
-    margin-top: -30px;
+    margin-top: -30px; 
 }
-
+.user-bio{
+    margin: 30px;
+}
 .username,
 .stat {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
     font-size: 18px;
     font-weight: 700;
 }
-
 .user-stats {
     justify-content: center;
     display: flex;
 }
-
 .stats-followers,
 .stats-likes,
 .stats-photos {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 30px;
 }
 
 /* media query */
 @media(max-width:375px) {
     .bg-top {
-        margin: -100px;
-        width: 80%;
+        top: -500px;
+        left: -772px;  
     }
-
     .bg-bottom {
-        position: relative;
-        width: 100%;
-        margin: 0;
+       right: -753px;
+       bottom:-572px;
     }
-
     .user-card-pattern {
-        width: 350px;
+        width: 300px;
         margin: auto;
     }
-
     .user {
-        width: 350px;
-        margin-top: 20%;
-        height: fit-content;
+        width: 300px;
+        margin-top: 20%;  
+    }
+    .user-bio{
+        margin: 20px;
     }
 
 }
